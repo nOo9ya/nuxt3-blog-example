@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('/fonts/NotoSansKR-VariableFont_wght.ttf') format('ttf');
+}
+
+.noto-sans-kr {
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  @for $i from 1 through 9 {
+    &-#{$i}00 {
+      font-weight: 100 * $i;
+    }
+  }
+}
+
+body {
+  font-family: 'Noto Sans KR', Arial, sans-serif;
+
+  a {
+    @apply text-green-600;
+    font-size: 1em;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
