@@ -5,7 +5,7 @@ import Logo from "~/assets/icons/Logo.vue";
 <template>
   <header class="flex mb-10 items-center">
     <div class="flex-1">
-      <NuxtLink to="/"><Logo class="h-[50px] w-[200px]" /></NuxtLink>
+      <NuxtLink to="/"><Logo class="h-10 w-40" /></NuxtLink>
     </div>
     <nav class="grow">
       <ul class="flex gap-4 list-none">
