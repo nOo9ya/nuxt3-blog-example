@@ -10,9 +10,10 @@ const config = useRuntimeConfig();
 // console.log(config.public.apiBase);
 
 const apiBase = config.public.apiBase;
-const {data: posts, pending, error} = await useFetch(`${apiBase}/posts`);
+const {data: posts, status} = await useFetch(`${apiBase}/posts`);
 // console.log(posts);
-console.log(pending);
+// console.log("status ======> ", status);
+// console.log("data ======> ", Object.entries(posts.value)[0]);
 // const {data: users, pending, error} = await useFetch(`${apiBase}/users`);
 
 </script>
@@ -20,10 +21,10 @@ console.log(pending);
 <template>
   <div class="text-3xl mb-4">
     <h1>Latest Posts</h1>
-    <div v-if="pending">
+    <div v-if="status.pending">
       Loading data...
     </div>
-    <div v-else-if="error" class="text-red-700">
+    <div v-else-if="status.error" class="text-red-700">
       <span class="fas fa-exclamation-circle"></span> Error Loading results
     </div>
     <section v-else>

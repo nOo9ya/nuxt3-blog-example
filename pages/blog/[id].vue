@@ -9,10 +9,9 @@ const route = useRoute();
 // console.log(route.params.id);
 
 // type AsyncDataRequestStatus = 'idle' | 'pending' | 'success' | 'error'
-const {
-  status,
-  data: post
-} = await useAsyncData(`post_${route.params.id}`, () => $fetch(`${apiBase}/posts/${route.params.id}`));
+const {status, data: post} = await useAsyncData(`post_${route.params.id}`, () => {
+  return $fetch(`${apiBase}/posts/${route.params.id}`)
+});
 // const {data: post, status} = await useAsyncData(`post_${id}`, async () => {
 //   const [ post, post2 ] = await Promise.all([
 //     $fetch(`${apiBase}/posts/${id}`),
