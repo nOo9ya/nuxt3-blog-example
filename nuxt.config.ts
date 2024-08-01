@@ -5,6 +5,19 @@ export default defineNuxtConfig({
   ssr: true,
   app: {
     head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: 'Nuxt3 Blog example',
+      meta: [
+        {
+          name: 'description',
+          content: 'My first Nuxt3 Blog example'
+        },
+        {
+          name: 'keywords',
+          content: 'nuxt3, vue, blog, example'
+        }
+      ],
       link: [
         // {
         //   rel: "stylesheet",
