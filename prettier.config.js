@@ -263,5 +263,8 @@ module.exports = {
      */
     // singleAttributePerLine: 'false',
 
-    plugins: ["prettier-plugin-tailwindcss"],
+    plugins: [
+        "prettier-plugin-tailwindcss",
+        "prettier-plugin-vue",
+    ],
 };

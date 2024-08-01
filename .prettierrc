@@ -1,0 +1,13 @@
+{
+  "useTabs": true,
+  "tabWidth": 2,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "auto",
+  "singleQuote": false,
+  "trailingComma": "all",
+  "printWidth": 80,
+  "plugins": ["prettier-plugin-tailwindcss","prettier-plugin-vue"],
+  "pluginSearchDirs": ["."],
+  "overrides": [{ "files": "*.vue","options": { "parser": "vue" } }]
+}

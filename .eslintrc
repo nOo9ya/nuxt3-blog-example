@@ -1,0 +1,22 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es2017": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/essential",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended", // 이 부분 꼭 추가해야함!
+    "plugin:prettier-plugin-tailwindcss",
+    "plugin:prettier-plugin-vue"
+  ]
+}
