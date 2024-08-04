@@ -14,6 +14,12 @@ const { data: posts, status } = await useFetch(`${apiBase}/posts`, {
 	key: "latestposts",
 	server: true,
 	lazy: true,
+	// query => query string parameter
+	query: {
+		_sort: "id",
+		_order: "desc",
+		_limit: 10,
+	},
 });
 // console.log(posts);
 // console.log("status ======> ", status);
