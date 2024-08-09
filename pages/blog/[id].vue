@@ -67,7 +67,7 @@ const refetchData = async () => {
 			</h1>
 			<p class="text-sm">{{ post.content }}</p>
 			<div class="flex flex-row gap-4 items-center text-sm">
-				<span class="flex">Created by: {{ post.userId }}</span>
+				<span class="flex">Created by: {{ post.UserId }}</span>
 				<time class="flex items-center">
 					<span class="fa fa-clock"></span>
 					{{ post.createdAt }}

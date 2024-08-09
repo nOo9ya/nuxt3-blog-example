@@ -70,7 +70,10 @@ export default defineNuxtConfig({
 		// "~/assets/styles/custom.css",
 		"~/assets/styles/scss/app.scss",
 	],
-	modules: ["@nuxtjs/tailwindcss"],
+	modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
+	plugins: [
+		// "~/plugins/otherplugins/foo"
+	],
 	runtimeConfig: {
 		secretKey: "",
 		public: {
